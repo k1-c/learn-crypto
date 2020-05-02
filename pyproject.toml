@@ -10,6 +10,7 @@ ecdsa = "^0.15"
 flake8 = "^3.7.9"
 black = "^19.10b0"
 mypy = "^0.770"
+base58 = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 
