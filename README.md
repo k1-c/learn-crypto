@@ -12,7 +12,11 @@
 - アドレスの作成
   - Base58→人が見て読み間違えやすい文字列を排除したエンコード方式
   - Base58Check→チェックサムの導入
-  
+- 非決定性ウォレットと決定性ウォレット
+- BIP32とBIP44
+- 階層的決定性ウォレット
+- 拡張鍵
+
 
 ## 秘密鍵からアドレス生成までの流れ
 ![btc encryption](https://github.com/shunk-py/images/blob/master/btc-encryption.png)
@@ -39,3 +43,12 @@
 - 公開鍵をSHA-256でハッシュ化（①）
 - ①をRIPEMD-160でハッシュ化（②）
 - ②をBase58Checkエンコード
+
+## BIP44に定めるHDウォレットのパスの仕様
+`m / purpose' / coin_type' / account' / change / address_index`
+
+## HD Walletにおけるマスター鍵の導出プロセス
+![generate hd master key](https://github.com/shunk-py/images/blob/master/generate-hd-master-key.png)
+
+## HD Walletにおける子鍵の導出プロセス
+![generate hd child key](https://github.com/shunk-py/images/blob/master/generate-hd-child-key.png)

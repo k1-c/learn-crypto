@@ -4,7 +4,8 @@ import binascii
 
 priv_key = os.urandom(32)
 pub_key = ecdsa.SigningKey.from_string(
-    priv_key, curve=ecdsa.SECP256k1).verifying_key.to_string()
+    priv_key, curve=ecdsa.SECP256k1
+).verifying_key.to_string()
 
 # y座標を取り出す
 pub_key_y = int.from_bytes(pub_key[32:], "big")

@@ -10,4 +10,4 @@ if len(sys.argv) == 2:
     hash = hashlib.sha256(hash_origin).hexdigest()
     print(hash)
 else:
-    print('error: invalid arguments')
+    print("error: invalid arguments")
